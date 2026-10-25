@@ -1,0 +1,6 @@
+﻿enum UnitStatus
+{
+Available,
+Busy
+}
+
