@@ -1,6 +1,0 @@
-﻿enum UnitStatus
-{
-Available,
-Busy
-}
-
