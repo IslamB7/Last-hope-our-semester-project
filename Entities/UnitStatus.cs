@@ -1,5 +1,8 @@
-enum UnitStatus
+namespace ResQFlow.Entities
 {
-Available,
-Busy
+    public enum UnitStatus
+    {
+        Available,
+        Busy
+    }
 }
