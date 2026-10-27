@@ -1,6 +1,9 @@
-public enum IncidentStatus
+namespace ResQFlow.Entities
 {
-     Incoming,
-     Active,
-     Completed
+     public enum IncidentStatus
+     {
+          Incoming,
+          Active,
+          Completed
+     }
 }
