@@ -4,7 +4,7 @@ namespace ResQFlow.UI;
 
 class ConsoleMenu {
 
-    public void Run(string[]) {
+    public void Run() {
 
     Console.WriteLine("""
         Menu:
@@ -25,13 +25,10 @@ class ConsoleMenu {
 
         do {
             Console.Write("Enter a number from the menu: ");
-            try {
-                menuChoice = int.TryParse(Console.ReadLine());
-            }
-            catch (FormatException) {
-            }
+            
+            correct = int.TryParse(Console.ReadLine(), out menuChoice);
 
-            if (menuChoice < 1 || menuChoice > 6) {
+            if (!correct || menuChoice < 1 || menuChoice > 6) {
                 Console.WriteLine("Invalid input - try again");
                 correct = false;
             } else {
