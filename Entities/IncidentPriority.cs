@@ -1,6 +1,6 @@
 namespace ResQFlow.Entities
 {
-     public enum IncidentStatus
+     public enum IncidentPriority
      {
           Low,
           Medium,
