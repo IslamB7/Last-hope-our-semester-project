@@ -1,10 +1,25 @@
 using System;
+using ResQFlow.Entities;
+using ResQFlow.Logic;
+using ResQFlow.UI;
 
 class ConsoleMenu {
 
+    static IncidentService incidentService = new IncidentService();
+    static ConsoleUI ui = new ConsoleUI();
     static void Main(string[] args)
     {
         Run(args);
+    }
+
+    static void RegisterIncident()
+    {
+        IncidentType type = ui.AskIncidentType();
+        string location = ui.AskRequiredText("Location");
+        string description = ui.AskRequiredText("Description");
+        IncidentPriority priority = ui.AskIncidentPriority();
+        Incident incident = incidentService.Register(type, location, description, priority);
+        Console.WriteLine("Incident registered with ID " + incident.Id);
     }
 
     static void Run(string[] args) {
@@ -48,6 +63,7 @@ class ConsoleMenu {
         switch (MenuSelection()) {
             case 1:
             Console.WriteLine("'Register New Incident' selected");
+            RegisterIncident();
             break;
 
             case 2:
