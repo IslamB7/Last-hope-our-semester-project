@@ -6,9 +6,9 @@ namespace ResQFlow.Entities
 
         public IncidentType? type { get; set; }
 
-        public string Location { get; set; }
+        public string Location = string.Empty;
 
-        public string Description { get; set; }
+        public string Description = string.Empty;
 
         public IncidentPriority? priority { get; set; }
 
