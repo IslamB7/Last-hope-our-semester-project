@@ -6,7 +6,7 @@ namespace ResQFlow.Entities
 
         public IncidentType? Type { get; set; }
 
-        public string Location = string.Empty;
+        public string Location { get; set; } = string.Empty;
 
         public string Description = string.Empty;
 
