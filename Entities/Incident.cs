@@ -8,7 +8,7 @@ namespace ResQFlow.Entities
 
         public string Location { get; set; } = string.Empty;
 
-        public string Description = string.Empty;
+        public string Description { get; set; } = string.Empty;
 
         public IncidentPriority? Priority { get; set; }
 
