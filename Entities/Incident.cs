@@ -4,14 +4,14 @@ namespace ResQFlow.Entities
     {
         public int Id { get; set; }
 
-        public IncidentType? type { get; set; }
+        public IncidentType? Type { get; set; }
 
         public string Location = string.Empty;
 
         public string Description = string.Empty;
 
-        public IncidentPriority? priority { get; set; }
+        public IncidentPriority? Priority { get; set; }
 
-        public IncidentStatus status { get; set; } = IncidentStatus.Incoming;
+        public IncidentStatus Status { get; set; } = IncidentStatus.Incoming;
     }
 }
