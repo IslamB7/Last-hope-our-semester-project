@@ -12,6 +12,6 @@ namespace ResQFlow.Entities
 
         public IncidentPriority? priority { get; set; }
 
-        public IncidentStatus status = IncidentStatus.Incoming;
+        public IncidentStatus status { get; set; } = IncidentStatus.Incoming;
     }
 }
