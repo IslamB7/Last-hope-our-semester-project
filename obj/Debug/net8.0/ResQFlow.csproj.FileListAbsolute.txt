@@ -1,5 +1,0 @@
-C:\Users\massa\Documents\GitHub\Last-hope-our-semester-project\obj\Debug\net8.0\ResQFlow.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\massa\Documents\GitHub\Last-hope-our-semester-project\obj\Debug\net8.0\ResQFlow.AssemblyInfoInputs.cache
-C:\Users\massa\Documents\GitHub\Last-hope-our-semester-project\obj\Debug\net8.0\ResQFlow.AssemblyInfo.cs
-C:\Users\massa\Documents\GitHub\Last-hope-our-semester-project\obj\Debug\net8.0\ResQFlow.csproj.CoreCompileInputs.cache
-C:\Users\massa\Documents\GitHub\Last-hope-our-semester-project\obj\Debug\net8.0\ResQFlow.sourcelink.json
