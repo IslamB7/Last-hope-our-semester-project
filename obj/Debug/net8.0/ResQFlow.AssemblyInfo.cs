@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ResQFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbcb6f29a17b98a073506c0bfcd8071f2438c33f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb34dde16fe6a98b4f52053ba7976e359c4fd991")]
 [assembly: System.Reflection.AssemblyProductAttribute("ResQFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ResQFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
