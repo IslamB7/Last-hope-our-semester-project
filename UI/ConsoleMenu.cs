@@ -1,12 +1,15 @@
 using System;
+using ResQFlow.UI;
+using ResQFlow.Logic;
+using ResQFlow.Entities;
 
 class ConsoleMenu {
-
+    //Creates a shared IncidentService for the whole dispatcher's shift, to be able to use the same incidents list
+    static IncidentService incidentService = new IncidentService();
     static void Main(string[] args)
     {
         Run(args);
     }
-
     static void Run(string[] args) {
 
     Console.WriteLine("""
@@ -48,6 +51,13 @@ class ConsoleMenu {
         switch (MenuSelection()) {
             case 1:
             Console.WriteLine("'Register New Incident' selected");
+            //Creates the user interface to collect information from the user, for each new selection of this case
+            ConsoleUI consoleUI = new ConsoleUI();
+            //Creates a new incident with the information given by the dispatcher
+            Incident incident = consoleUI.RegisterNewIncident();
+            //Stores the returned incident in incident list and gives it an id
+            incidentService.AddIncident(incident);
+            Console.WriteLine("Incident ID: " + incident.Id);
             break;
 
             case 2:
